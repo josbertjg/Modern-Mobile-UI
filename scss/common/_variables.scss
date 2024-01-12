@@ -1,0 +1,19 @@
+// Paleta de colores
+$blue: #2E6C99;
+$blue-light: #A2AFD1;
+$blue-lighter: #ccd8f3;
+$pink-blue: #8C99C1;
+$electric-blue: #5674E8;
+$white: #F5F5F5;
+$grey: grey;
+$grey-light: rgba(0, 0, 0, 0.11);
+$grey-lighter: rgba(0, 0, 0, 0.055);
+$grey-dark: darken($grey,10);
+$black: darken(#2F3656,6);
+$shadow-color:rgba(0, 0, 0, 0.246);
+$shadow: 0 5px 10px 0 $shadow-color;
+$rojo: rgb(255, 97, 97);
+$verde: rgb(113, 209, 113);
+
+// Font Families
+$principal-font:'DM Sans', sans-serif;

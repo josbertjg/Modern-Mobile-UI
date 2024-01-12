@@ -1,0 +1,262 @@
+@import "../common/variables";
+#phone-body{
+  position: relative;
+  height: 72%;
+  width: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background-color: $white;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.case-article{
+  padding: 0 2rem;
+  cursor: pointer;
+  margin: 1rem 0;
+
+  p{
+    margin: 0%;
+  }
+  .case-header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .case-title{
+      margin: 0%;
+      color: $black;
+    }
+    .case-info{
+      display: flex;
+      align-items: center;
+      .time-ago{
+        color: $grey;
+        font-size: .8rem;
+        margin-right: .5rem;
+      }
+      .material-symbols-outlined{
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .case-addres{
+    font-size: .9rem;
+    span{
+      font-size: 1rem;
+      color: $blue;
+    }
+  }
+  .case-description{
+    font-size: .8rem;
+    color: $grey;
+    text-align: justify;
+  }
+}
+
+.chat-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+
+  .chat-divider{
+    align-self: center;
+    padding: .5rem .8rem;
+    margin: .7rem 0;
+    border-radius: 50px;
+    font-size: .8rem;
+  }
+
+  .time-divider{
+    background-color: $blue-lighter;
+    color: $grey-dark;
+  }
+
+  .system-message-divider{
+    background-color: $pink-blue;
+    color: $white;
+    text-align: center;
+    width: 65%;
+  }
+
+  .message-text{
+    margin: 0% !important;
+    font-size: .8rem;
+  }
+
+  .time{
+    color: $grey;
+    font-size: .7rem;
+    margin-top: .2rem;
+  }
+
+  .message-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .client-message-container{
+    align-items: flex-end;
+    margin: .5rem;
+
+    .client-message{
+      background-color: $electric-blue;
+      color: $white;
+      padding: 1rem;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+  }
+
+  .operator-message-container{
+    align-items: flex-start;
+    margin: .5rem;
+
+    .operator-message{
+      background-color: lighten($blue-lighter,6);
+      color: $black;
+      padding: 1rem;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+
+}
+
+.profile-info{
+  display: flex;
+  flex-direction: column;
+
+  .top-info{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0 2rem;
+
+    .profile-img-container{
+      position: relative;
+
+      img{
+        display: inline-block;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: $shadow;
+      }
+      .profile-edit-camera{
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .3rem;
+        background-color: $blue-light;
+        color: $white;
+        border-radius: 50%;
+
+        .material-symbols-outlined{
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .profile-name-container{
+      margin-left: 1rem;
+      
+      .profile-name{
+        color: $black;
+        font-size: 1.3rem;
+      }
+      .profile-email{
+        color: $grey;
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .aditional-info{
+    margin: 1rem 0;
+    padding: 0 2rem;
+
+    .info-item{
+      display: flex;
+      align-items: center;
+      color: $grey;
+      font-size: .8rem;
+      margin-bottom: .4rem;
+      .material-symbols-outlined{
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  .profile-divider-boxes{
+    display: flex;
+
+    .profile-box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1;
+      border: 1px solid lighten($grey-light,25);
+      padding: .8rem .3rem;
+
+      .indicator{
+        display: flex;
+        align-items: center;
+        height: 29px;
+        font-weight: bold;
+        margin-bottom: .5rem;
+        font-size: 1.4rem;
+        color: $black;
+      }
+      
+      .indicator-label{
+        text-align: center;
+        color: $grey;
+        font-size: .7rem;
+      }
+    }
+  }
+
+}
+
+.profile-actions{
+  margin-top: .5rem;
+  .profile-action-item{
+    display: flex;
+    align-items: center;
+    padding: .5rem 2rem;
+    color: $electric-blue;
+
+    .material-symbols-outlined{
+      margin-right: .5rem;
+    }
+
+    .action-text{
+      position: relative;
+      .badge{
+        position: absolute;
+        top: -10%;
+        right: -7.5%;
+      }
+    }
+  }
+
+  .profile-action-item[color="danger"]{
+    color: $rojo;
+  }
+  .profile-action-item[color="primary"]{
+    color: $electric-blue;;
+  }
+  .profile-action-item[color="success"]{
+    color: $verde;
+  }
+  .profile-action-item[color="dark"]{
+    color: $black;
+  }
+}

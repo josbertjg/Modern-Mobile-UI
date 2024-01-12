@@ -1,0 +1,40 @@
+@import "../common/_variables.scss";
+body{
+  background-color: $blue-light;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $principal-font;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  p{
+    margin: 0%;
+  }
+  h1{
+    margin: 0%;
+  }
+}
+@mixin phoneContainer($background: $white) {
+  position: relative;
+  background: $background !important;
+  background: $white;
+  height: 75vh;
+  width: 350px;
+  border-radius: 40px;
+  @media screen and (max-width: 500px) {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+#phone-container{
+  @include phoneContainer()
+}
+#phone-container[color="blue-lighter"]{
+  @include phoneContainer($blue-lighter)
+}

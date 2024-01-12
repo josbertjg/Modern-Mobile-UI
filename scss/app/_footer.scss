@@ -1,0 +1,125 @@
+@import "../common/variables";
+#phone-footer{
+  box-sizing: border-box;
+  height: 13%;
+  width: 100%;
+  background-color: $white;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  user-select: none;
+  @media screen and (max-width: 500px) {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .footer-tabs-container{
+    border-top: $electric-blue solid 2px;
+    height: 100%;
+    display: flex;
+
+    .footer-tab{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      height: 100% !important;
+      transition: all 200ms;
+      cursor: pointer;
+
+      .material-symbols-outlined{
+        font-size: 1.5rem;
+        transition: all 200ms;
+      }
+
+      &:hover{
+        background-color: $grey-light;
+        .material-symbols-outlined{
+          color: $electric-blue;
+        }
+      }
+      &:active{
+        background-color: $grey-lighter;
+      }
+    }
+
+    .footer-tab:first-child{
+      border-bottom-left-radius: 40px;
+      @media screen and (max-width: 500px) {
+        border-bottom-left-radius: 0px;
+      }
+    }
+
+    .footer-tab:last-child{
+      border-bottom-right-radius: 40px;
+      @media screen and (max-width: 500px) {
+        border-bottom-right-radius: 0px;
+      }
+    }
+
+    .active{
+      background-color: $electric-blue;
+      .material-symbols-outlined{
+        color: $white;
+      }
+
+      &:hover{
+        background-color: lighten($electric-blue,5);
+        .material-symbols-outlined{
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .chat-actions-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .actions-bar{
+      height: 50px;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      border-radius: 50px;
+      background-color: lighten($blue-lighter,6);
+
+      .add-more-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .2rem;
+        background-color: $electric-blue;
+        border-radius: 15px;
+        margin-left: .5rem;
+        .material-symbols-outlined{
+          color: $white;
+        }
+      }
+
+      .chat-input{
+        height: 100%;
+        width: 58%;
+        margin-left: .3rem;
+        input{
+          background-color: transparent;
+          border: none;
+          height: 100%;
+          &:focus-visible{
+            border: none;
+            box-shadow: none;
+            outline: none;
+          }
+        }
+      }
+
+      .quick-actions{
+        .material-symbols-outlined{
+          color: $grey;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.floating-action-chat{
+  position: absolute;
+  top: 0%;
+  transform: translate(255px,54vh);
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: $electric-blue;
+  box-shadow: $shadow;
+  z-index: 999999;
+  @media screen and (max-width: 500px) {
+    transform: translate(380px,73vh);
+  }
+  @media screen and (max-width: 445px) {
+    transform: translate(330px,73vh);
+  }
+  @media screen and (max-width: 390px) {
+    transform: translate(80vw,73vh);
+  }
+
+  &:hover{
+    background-color: $white;
+    .material-symbols-outlined{
+      color: $electric-blue;
+    }
+  }
+
+  .material-symbols-outlined{
+    color: $white;
+  }
+  
+}

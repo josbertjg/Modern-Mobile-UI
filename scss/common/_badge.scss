@@ -1,0 +1,56 @@
+.badge-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge{
+  display: inline-block;
+  padding: .5rem;
+  border-radius: 100%;
+  background-color: $grey;
+}
+
+//Color
+.badge[color="primary"]{
+  background-color: $pink-blue;
+}
+.badge[color="danger"]{
+  background-color: $rojo;
+}
+.badge[color="success"]{
+  background-color: $verde;
+}
+
+//Position
+.badge[position="top"]{
+  position: absolute;
+  top: -10%;
+  // right: -20%;
+}
+.badge[position="top-right"]{
+  position: absolute;
+  top: -10%;
+  right: -20%;
+}
+.badge[position="top-left"]{
+  position: absolute;
+  top: -10%;
+  right: 60%;
+}
+.badge[position="bottom"]{
+  position: absolute;
+  top: 50%;
+  // right: -20%;
+}
+.badge[position="bottom-right"]{
+  position: absolute;
+  top: 50%;
+  right: -20%;
+}
+.badge[position="bottom-left"]{
+  position: absolute;
+  top: 50%;
+  right: 60%;
+}

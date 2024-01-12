@@ -1,0 +1,31 @@
+@import "./variables";
+.btn{
+  padding: .1rem;
+  transition: all 200ms;
+  user-select: none;
+
+  &:hover{
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: $grey-lighter;
+  }
+  &:active{
+    background-color: $grey-lighter;
+    color: $pink-blue;
+  }
+}
+
+.btn-flat{
+  padding: .1rem;
+  transition: all 200ms;
+  user-select: none;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $grey-lighter;
+  }
+  &:active{
+    background-color: $grey-lighter;
+    color: $pink-blue;
+  }
+}
